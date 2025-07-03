@@ -34,6 +34,8 @@ class KT_PT_Ops_V3D(KT_Panel_V3D):
     def draw(self, context):
         prefs = user_prefs()
         box = self.layout.box()
+        box.operator("kt.mirror", text="Mirror")
+        box.operator("kt.gen_terrain", text="Generate Terrain")
         box.operator("wm.url_open", text="Docs").url = "https://kenzocg.github.io"
 
 
